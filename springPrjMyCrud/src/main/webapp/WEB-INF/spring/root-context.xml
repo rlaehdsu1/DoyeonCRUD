@@ -33,4 +33,10 @@
 		<property name="dataSource" ref="bds"></property>
 	</bean>
 		
+		
+	<!-- filter -->
+	<bean id="hello" class="com.kh.app.filter.EncodingFilter">
+		
+	</bean>
+		
 </beans>
