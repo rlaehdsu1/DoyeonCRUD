@@ -1,6 +1,7 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8" pageEncoding="UTF-8" %>
     <!DOCTYPE html>
     <html>
+
     <head>
         <meta charset="UTF-8">
         <title>Insert title here</title>
@@ -45,24 +46,27 @@
                 margin-left: 10px;
             }
 
-            .modal-body{
+            .modal-body {
                 height: 40px;
                 width: 400px;
                 margin-top: 30px;
             }
 
-            .modal-body input{
+            .modal-body input {
                 margin-top: 30px;
                 margin-left: 30px;
                 width: 250px;
                 height: 50px;
-                
-            }
 
+            }
         </style>
     </head>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm"
+        crossorigin="anonymous"></script>
+
     <body>
 
         <h1>학원생 관리 웹 프로그램</h1>
@@ -73,7 +77,8 @@
 
                 <div id="topArea">
                     <button>전체보기</button>
-                    <button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#staticBackdrop">글 등록</button>
+                    <button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#staticBackdrop">글
+                        등록</button>
 
                     <!-- 검색 영역 -->
                     <form action="" class="searchArea">
@@ -139,34 +144,36 @@
 
         </div>
 
-<!-- 모달 창 코드 -->
-<div class="modal fade" id="staticBackdrop" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
-    <div class="modal-dialog">
-    <div class="modal-content" style="height: 600px; width: 550px;">
-        <h2>학원생 등록</h2>
-        <div class="modal-body">
-            <div>
-               &nbsp;&nbsp; 이름 : <input type="text" name="" id="" placeholder="이름">
-            </div>
-            <div>
-                거주지  : <input type="text" name="" id="" placeholder="거주지">
-            </div>
-            <div>
-                대학교  : <input type="text" name="" id="" placeholder="대학교" >
-            </div>
-            <div>
-                &nbsp;&nbsp; 전공 : <input type="text" name="" id="" placeholder="전공">
+        <!-- 모달 창 코드 -->
+        <div class="modal fade" id="staticBackdrop" data-bs-keyboard="false" tabindex="-1"
+            aria-labelledby="staticBackdropLabel" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content" style="height: 600px; width: 550px;">
+                    <h2>학원생 등록</h2>
+                    <div class="modal-body">
+                        <div>
+                            &nbsp;&nbsp; 이름 : <input type="text" name="" id="" placeholder="이름">
+                        </div>
+                        <div>
+                            거주지 : <input type="text" name="" id="" placeholder="거주지">
+                        </div>
+                        <div>
+                            대학교 : <input type="text" name="" id="" placeholder="대학교">
+                        </div>
+                        <div>
+                            &nbsp;&nbsp; 전공 : <input type="text" name="" id="" placeholder="전공">
+                        </div>
+                    </div>
+                    <div class="modal-footer" style="margin: auto;">
+                        <button class="btn btn-primary">등록</button>
+                        <button class="btn btn-primary" data-bs-target="#exampleModalToggle"
+                            data-bs-toggle="modal">닫기</button>
+                    </div>
+                </div>
             </div>
         </div>
-        <div class="modal-footer" style="margin: auto;">
-            <button class="btn btn-primary">등록</button>
-            <button class="btn btn-primary" data-bs-target="#exampleModalToggle" data-bs-toggle="modal">닫기</button>
-        </div>
-    </div>
-    </div>
-</div>
 
-</div>
+        </div>
 
     </body>
 
@@ -176,9 +183,4 @@
             console.log(target);
         }
 
-        function goCancel(){
-            const x = document.querySelector(".modal");
-
-            x.style.display = "none";
-        }
     </script>
